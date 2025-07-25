@@ -7,7 +7,8 @@ It exposes the following functions:
 
 | Function | Description |
 |----------|-------------|  
-|has_point(point:Vector2)|Returns true if the point is inside the area.|
+|has_point(point:Vector2) -> bool |Returns true if the point is inside the area.|
+|get_random_point() -> Vector2 | Returns a random point inside the area.|
 
 ## Installation
 1. Download this code repo as a .zip file.

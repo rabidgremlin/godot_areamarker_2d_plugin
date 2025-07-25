@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://b26n8mifjbf5n"]
+[gd_scene load_steps=5 format=3 uid="uid://b26n8mifjbf5n"]
 
 [ext_resource type="Script" uid="uid://b2gm1vj6akdx2" path="res://test/test_scene.gd" id="1_lr5j1"]
 [ext_resource type="Script" uid="uid://c7lmt4ulhnywy" path="res://addons/area_marker_2d/area_marker_2d_node.gd" id="2_56kpk"]
+[ext_resource type="Texture2D" uid="uid://lde611rahpl2" path="res://icon.svg" id="3_56kpk"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_lr5j1"]
 font_size = 50
@@ -47,3 +48,14 @@ offset_bottom = 353.0
 text = "YOUR MOUSE IS ON THE RIGHT"
 label_settings = SubResource("LabelSettings_lr5j1")
 horizontal_alignment = 1
+
+[node name="Target" type="Sprite2D" parent="."]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(403, 398)
+scale = Vector2(0.523438, 0.523438)
+texture = ExtResource("3_56kpk")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(577, 393)
+scale = Vector2(0.523438, 0.523438)
+texture = ExtResource("3_56kpk")

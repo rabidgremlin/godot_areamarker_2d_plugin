@@ -37,6 +37,13 @@ func _draw():
 func has_point(point:Vector2) -> bool:
 	var rect_global = Rect2(global_position + _rect.position, _rect.size)
 	return rect_global.has_point(point)
+	
+func get_random_point() -> Vector2:
+	var rect_global = Rect2(global_position + _rect.position, _rect.size)
+	var random_x = randf_range(rect_global.position.x, rect_global.position.x + rect_global.size.x)
+	var random_y = randf_range(rect_global.position.y, rect_global.position.y + rect_global.size.y)
+	return Vector2(random_x,random_y)
+		
 		
 		
 			
