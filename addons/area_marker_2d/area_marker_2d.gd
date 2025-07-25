@@ -31,8 +31,7 @@ func _exit_tree():
 	remove_custom_type("AreaMarker2D")
 	
 	
-func _edit(object):
-	print("Selected AreaMarker2D is:", object)
+func _edit(object):	
 	selected_area_marker = object
 	update_overlays()
 	
@@ -43,8 +42,7 @@ func _make_visible(visible):
 		selected_area_marker = null
 	update_overlays()
 	
-func _handles(object) -> bool:
-	print("Checking if can handle:",object)
+func _handles(object) -> bool:	
 	return object is AreaMarker2D
 	
 func _forward_canvas_draw_over_viewport(viewport_control):

@@ -27,8 +27,7 @@ extends Node2D
 var _rect: Rect2			
 
 func _reclaculate_rect():
-	_rect = Rect2(-1.0*size/2+offset,size)
-	print("Rect is now:", _rect)
+	_rect = Rect2(-1.0*size/2+offset,size)	
 		
 func _draw():
 	if Engine.is_editor_hint():
